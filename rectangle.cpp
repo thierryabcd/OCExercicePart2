@@ -9,40 +9,40 @@ public:
 	// prototype de la méthode, METTRE CONST QUAND PAS DE MODIF
 	double surface() const;				
 	// accesseurs
-	double hauteur() const;		// double getHauteur() const;
-	double largeur() const;		// double getLargeur() const;
+	double hauteur() const;			// double getHauteur() const;
+	double largeur() const;			// double getLargeur() const;
 	// manipulateurs
-	void hauteur ( double ) ; // void   setHauteur ( double h ) ;
-	void largeur ( double );	// void   setLargeur ( double l );	
+	void hauteur ( double ) ; 		// void   setHauteur ( double h ) ;
+	void largeur ( double );		// void   setLargeur ( double l );	
 
 	// RECOUVREMENT ENTRE accesseurs ET manipulateurs EN METTANT 
 	// VOLONTAIREMENT DES NOMS IDENTIQUES
 
 private:
-	double ahauteur;	
-	double alargeur;
+	double hauteur_;				// METTRE UN UNDERSCORE A LA FIN DES ATTRIBUTS
+	double largeur_;
 
 };
 
-double Rectangle::surface () const		// definition de la methode
+double Rectangle::surface () const	// definition de la methode
 	{								// :: est l'opérateur de PORTEE
-		return ( ahauteur * alargeur );
+		return ( hauteur_ * largeur_ );
 	}
 double Rectangle::hauteur () const
 	{
-		return ( ahauteur ) ;
+		return ( hauteur_ ) ;
 	}
 double Rectangle::largeur () const
 	{
-		return ( alargeur ) ;
+		return ( largeur_ ) ;
 	}
 void Rectangle::hauteur ( double h ) 
 	{
-		ahauteur = h ; 
+		hauteur_ = h ; 
 	}
 void Rectangle::largeur ( double l ) 
 	{
-		alargeur = l ; 
+		largeur_ = l ; 
 	}
 	
 	
