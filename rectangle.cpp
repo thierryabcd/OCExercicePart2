@@ -56,7 +56,7 @@ int main()
 	cout << "Quelle largeur ?"; cin >> lu ;
 	rect1.largeur( lu ) ;
 		
-	cout << "Surface : " << rect1.surface() 
+	cout << "La surface calculee est : " << rect1.surface() 
 		 << endl;
 	
 	return 0 ; 
